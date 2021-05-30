@@ -25,16 +25,16 @@ void BinarySearch(int n, int key){
  
 int main(){
     int N, M, tmp;
-    cin >> N;
+    scanf("%d",&N);
 
     for(int i=0; i<N; i++){
-        cin >> arr[i];
+        scanf("%d",&arr[i]);
     }
     sort(arr, arr+N); 
-    cin >> M;
+    scanf("%d", &M);
  
     for(int i=0; i<M; i++){
-        cin >> tmp;
+        scanf("%d", &tmp);
         BinarySearch(N, tmp);
     }
 }
